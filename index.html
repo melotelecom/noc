@@ -87,7 +87,7 @@
   }
   .header-inner { max-width:1140px; margin:0 auto; padding:0 24px; height:100%; display:flex; align-items:center; gap:28px; }
   .brand { display:flex; align-items:center; gap:11px; text-decoration:none; margin-right:auto; }
-  .brand-mark { width:34px; height:34px; flex-shrink:0; }
+  .brand-mark { width:36px; height:36px; flex-shrink:0; border-radius:9px; display:block; box-shadow:0 0 0 1px var(--border); }
   .brand-name { font-weight:800; font-size:1.05rem; letter-spacing:0.5px; }
   .brand-name small { display:block; font-size:0.6rem; font-weight:500; letter-spacing:3.5px; color:var(--muted); }
   nav.main-nav { display:flex; align-items:center; gap:4px; }
@@ -494,15 +494,7 @@
 <header>
   <div class="header-inner">
     <a class="brand" href="#topo" aria-label="MELO Telecom — início">
-      <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true">
-        <defs>
-          <linearGradient id="gbrand" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#22d3ee"/>
-          </linearGradient>
-        </defs>
-        <rect x="1.5" y="1.5" width="31" height="31" rx="8" fill="none" stroke="url(#gbrand)" stroke-width="2"/>
-        <path d="M8 18h4l2.5-7 4.5 12 2.5-6h4.5" fill="none" stroke="url(#gbrand)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+      <img class="brand-mark" src="apple-touch-icon.png" alt="Logo MELO Telecom">
       <span class="brand-name">MELO<small>TELECOM</small></span>
     </a>
     <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
@@ -873,9 +865,9 @@
           <div style="display:flex; gap:28px; flex-wrap:wrap; align-items:flex-start;">
             <div style="flex:1; min-width:260px;">
               <div class="card-icon"><svg class="icon"><use href="#i-shield"/></svg></div>
-              <h3>Wazuh — SIEM</h3>
+              <h3>SIEM</h3>
               <div class="tool-sub">Security Information &amp; Event Management · Carro-chefe</div>
-              <p>O Wazuh é o cérebro do nosso CSOC. Plataforma de SIEM que centraliza o monitoramento de logs e eventos de segurança de endpoints, redes e aplicações, detectando ameaças em tempo real com regras avançadas de correlação e análise comportamental.</p>
+              <p>O SIEM é o cérebro do nosso CSOC: centraliza o monitoramento de logs e eventos de segurança de endpoints, redes e aplicações, detectando ameaças em tempo real com regras avançadas de correlação e análise comportamental.</p>
               <ul class="tool-feat">
                 <li>Coleta e normalização de logs de múltiplos dispositivos e sistemas</li>
                 <li>Detecção de ameaças com regras e correlação em tempo real (IoCs)</li>
@@ -898,13 +890,13 @@
 
         <div class="tool-card">
           <div class="card-icon"><svg class="icon"><use href="#i-share"/></svg></div>
-          <h3>Shuffle — SOAR</h3>
+          <h3>SOAR</h3>
           <div class="tool-sub">Security Orchestration, Automation &amp; Response</div>
           <p>Plataforma SOAR que automatiza respostas a incidentes, libera a equipe para análises críticas e reduz drasticamente MTTD e MTTR.</p>
           <ul class="tool-feat">
             <li>Automação de bloqueio de IPs e isolamento de endpoints</li>
             <li>Orquestração de workflows complexos de resposta</li>
-            <li>Integração com Wazuh, firewalls, EDR e ticketing</li>
+            <li>Integração com o SIEM, firewalls, EDR e ticketing</li>
             <li>Padronização de processos de resposta a incidentes</li>
             <li>Redução significativa de MTTR (Mean Time to Respond)</li>
           </ul>
@@ -1119,10 +1111,7 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <svg class="brand-mark" width="30" height="30" viewBox="0 0 34 34" aria-hidden="true">
-        <rect x="1.5" y="1.5" width="31" height="31" rx="8" fill="none" stroke="url(#gbrand)" stroke-width="2"/>
-        <path d="M8 18h4l2.5-7 4.5 12 2.5-6h4.5" fill="none" stroke="url(#gbrand)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+      <img class="brand-mark" src="apple-touch-icon.png" alt="Logo MELO Telecom" style="width:30px; height:30px;">
       <span class="brand-name">MELO<small>TELECOM</small></span>
     </div>
     <div class="footer-links">
